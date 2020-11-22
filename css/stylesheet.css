@@ -33,12 +33,6 @@ h1 {
     margin-bottom: 0px;
 }
 
-h4 {
-    font-size: 40px;
-    font-weight: normal;
-    font-style: italic;
-}
-
 h2 {
     font-size: 25px;
     font-weight: bold;
@@ -47,8 +41,18 @@ h2 {
     margin-bottom: 0px;
 }
 
-p {
+h2 .adress {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+h2 .nomargin {
+    font-size: 25px;
     font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -58,24 +62,29 @@ h3 {
     margin-top: 0px;
 }
 
+h4 {
+    font-size: 40px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 h6 {
     font-size: 40px;
     float: left;
 }
 
-h5 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-top: 10px;
 
-}
 
-h7 {
-    font-size: 25px;
+p {
     font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 i p {
@@ -141,8 +150,8 @@ i{
 
 .container {
     position: relative;
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center it */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .container .content {
@@ -179,11 +188,11 @@ i{
 
 .fa-plus{
     transform: rotate(0deg);
-    transition: transform 0.5s linear;
+    transition: transform 0.1s linear;
 }
 .fa-plus.open{
     transform: rotate(45deg);
-    transition: transform 0.5s linear;
+    transition: transform 0.1s linear;
 }
 #myLinks a{
     color: black;
@@ -236,7 +245,7 @@ i{
 .sidenav a.icon {
     color: black;
     display: block;
-    position: absolute;
+    /*    position: absolute; */
     margin-left: 10%;
 }
 
@@ -244,3 +253,81 @@ i{
     background-color: #ddd;
     color: black;
 }
+
+
+@media only screen and (min-width:1100px) {
+    h5 {
+        font-size: 18px;
+    }
+    h5 br {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:1100px) {
+    h5 {
+        font-size: 18px;
+    }
+    h2.nomargin{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    h5 {
+        font-size: 15px;
+    }
+    .kol-2 {
+        width: 30%;
+    }
+    .kol-3 {
+        width: 50%;
+    }
+
+    .kol-8{
+        width: 70%;
+    }
+    .sidemargin {
+        margin-left: 31%;
+    }
+    h2.nomargin{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .hidden {
+        display: none;
+    }
+
+    .smallertxt {
+        font-size: 10px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    .kol-2 {
+        width: 40%;
+    }
+    .kol-3{
+        width: 100%;
+    }
+    .kol-5{
+        width: 100%;
+    }
+    .kol-8{
+        width: 60%;
+    }
+    .sidemargin {
+        margin-left: 41%;
+    }
+    h2.nomargin{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
